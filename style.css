@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  background: url("https://scontent.fhan3-3.fna.fbcdn.net/v/t1.6435-9/71090128_1863361193809808_3494314752698482688_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=a_oJ8SfDt8UAX9HTL4e&_nc_ht=scontent.fhan3-3.fna&oh=29959a4acfc1d51dfca140fefe5ce685&oe=619A5A47");
+  background-size: cover;
+}
+
+.memu {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0 100px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu img {
+  float: left;
+  width: 84px;
+}
+
+nav {
+  position: relative;
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  /* display: block; */
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 33px 20px;
+  text-decoration: none;
+}
+
+nav ul li ul {
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  min-width: 250px;
+  position: absolute;
+  margin-top: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.5s;
+}
+
+nav ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul li ul li a {
+  padding: 10px;
+}
